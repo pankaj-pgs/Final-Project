@@ -1,0 +1,30 @@
+.form{
+  background-color: rgb(250, 253, 252);
+  width: 30%;
+  padding:2%;
+  height: 100%;
+  margin:0 auto;
+  margin-top: 10%;
+  opacity: 0.8;
+  border-radius: 10px;
+  text-align: center;
+}
+input{
+  width: 250px;
+  height: 30px;
+}
+#submit{
+  width: 150px; height: 30px;
+}
+.App{
+  background-image: url('http://localhost:3000/public/images/background.jpg');
+				background-size: cover;
+				padding:10%;
+				padding-top: 2%;
+				padding-bottom: 12%;
+				padding-left: 10%;
+	 			background-repeat: no-repeat;
+	 			background-color: black;
+	 			background-position: center;
+	 			border-bottom: 7px solid black
+}
