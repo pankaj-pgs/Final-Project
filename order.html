@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
+    <title>Design Galaxy</title>
+    <link rel = "icon" href="http://localhost:4000/public/image/logo.png"type = "image/x-icon">
+    <style type="text/css">
+        
+.menu{
+	text-align: right;
+	font-family: 18px;
+}
+.menu1{
+	text-align: right;
+	font-family: 18px;
+	background-color: black;
+}
+.menu-ul{
+	padding: 10px;
+}
+.menu-ul li
+{
+	display: inline-block;
+	font-variant: small-caps;
+	letter-spacing: 5px;
+	padding: 10px 30px;
+	color: black;
+}
+a{
+	border-bottom: 1px solid transparent;
+	color: white;
+	text-decoration: none;
+}
+a:hover{
+	border-bottom: 1px solid white;
+}
+#sticky{
+	background: black;
+	position: fixed;
+	left:0px;
+	width: 100%;
+	z-index: 100;
+	top: 0px;
+
+}
+#sticky ul{
+	padding:0;
+	margin: 10px;
+
+}
+    </style>
+    <link rel="stylesheet" href="http://localhost:4000/public/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="menu" id="sticky">
+        <ul class="menu-ul">
+            <li><a href="http://localhost:4000/index.html">Home</a></li>
+            <li><a href="http://localhost:4000/gallery.html">Gallery</a></li>
+            <li><a href="http://localhost:4000/services.html">Services</a></li>
+            <li><a href="http://localhost:4000/order.html">Interior Parts</a></li>
+            <li><a href="http://localhost:4000/aboutus.html">About Us</a></li>
+            <li><a href="http://localhost:4000/feedback.html">Feedback</a></li>
+        </ul>
+    </div>
+    <!-- desktop view -->
+    <div class="container" id="container">
+        <div id="me">            
+        </div>
+
+        <div id="food-container">
+            <div id="header">
+                <div class="add-box">
+                    <i class="fa fa-map-marker your-address" id="add-address"> Your Address</i>
+                </div>
+                <div class="util">
+                    <i class="fa fa-cart-plus" id="cart-plus"> 0 Items</i>
+                </div>
+            </div>
+            <div id="food-items" class="d-food-items">
+                <div id="Chandelier" class="d-Chandelier">
+                    <p id="category-name">Chandelier</p>    
+                </div>
+
+                <div id="Pendant" class="d-Pendant">
+                    <p id="category-name">Pendant </p>    
+                </div>
+
+                <div id="Tables" class="d-Tables">
+                    <p id="category-name">Tables</p>
+                </div>
+
+                <div id="Frames" class="d-Frames">
+                    <p id="category-name">Frames Sets</p> 
+                </div>
+            </div>
+
+            <div id="cart-page" class="cart-toggle">
+                <p id="cart-title">Cart Items</p>
+                <p id="m-total-amount">Total Amout : 100</p>
+                <table>
+                    <thead>
+                        <td>Item</td>
+                        <td>Name</td>
+                        <td>Quantity</td>
+                        <td>Price</td>
+                    </thead>
+                    <tbody id="table-body">
+                        
+                    </tbody>
+                    <div id="checkout" class="cart-toggle">
+                       <th><p id="total-item">Total Item : 5</p></th> 
+                       <th><p id="delievery">Delievery Charge Rs 300</p></th>
+                        <th><p id="total-price"></p></th>
+                        <th><a class="cart-btn" href="http://localhost:4000/payment.html">Payment</a></th>
+                    </div>
+                </table>
+                
+            </div>
+        </div>
+
+        <div id="cart">
+            <div class="staste-header">
+            </div>
+            <div id="category-list">
+                <p class="item-menu">Categories</p>
+                <div class="border"></div>                
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- mobile view -->
+    <div id="mobile-view" class="mobile-view">
+        <div class="mobile-top">
+            <div class="logo-box">
+                <img src="/images/foodielogo.png" alt="" id="logo">
+                <i class="fa fa-map-marker your-address" id="m-add-address"> Your Address</i>
+            </div>
+            <div class="top-menu">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-tag"></i>
+                <i class="fa fa-heart-o"></i>
+                <i class="fa fa-cart-plus" id="m-cart-plus"> 0</i>
+            </div>
+        </div>
+        
+        <div class="item-container">
+            <div class="category-header" id="category-header">  
+            </div>
+
+            <div id="food-items" class="food-items">
+                <div id="Chandelier" class="m-Chandelier">
+                    <p id="category-name">Chandelier</p>    
+                </div>
+                <div id="Pendant" class="m-Pendant">
+                    <p id="category-name">Pendant </p>    
+                </div>
+                <div id="Tables" class="m-Tables">
+                    <p id="category-name">Tables</p>
+                </div>
+                <div id="Frames" class="m-Frames">
+                    <p id="category-name">Frames</p> 
+                </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <script src="http://localhost:4000/public/order.js" type="module"></script>
+</body>
+</html>

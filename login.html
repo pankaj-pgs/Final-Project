@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DESIGNS GALAXY</title>
+	<link rel = "icon" href="http://localhost:3000/public/images/logo.png"type = "image/x-icon"> 
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Design Galaxy committed to delivering inspired designs that fulfill client expectations through collaboration and exceptional service. We Provide Best Interior Solutions Which Makes Your Dream Houses. Our goal is always to create designs Customized to our clients' especial personal styles and practical needs">
+    <meta name="keywords" content="Interior designs, Designs Galaxy, Interior designing">
+	<!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!------------AOS------------->
+    <link rel="stylesheet" type="text/css" href="http://localhost:3000/public/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="http://localhost:3000/valid.js"></script>
+    <!------------AOS--------------->
+    <style type="text/css">
+        
+        .form{
+            background-color: rgb(250, 253, 252);
+            width: 30%;
+            padding:2%;
+            height: 100%;
+            margin:0 auto;
+            margin-top: 10%;
+            opacity: 0.8;
+            border-radius: 10px;
+            text-align: center;
+        }
+        input{
+            width: 250px;
+            height: 40px;
+            border-radius: 10px;
+        }
+        #submit{
+            width: 150px; height: 30px;
+            border-radius: 2px;
+        }
+    </style>
+
+
+</head>
+<body id="index">      
+	<div style="background-image: url('http://localhost:3000/public/images/background.jpg');
+				background-size: cover;
+				padding:10%;
+				padding-top: 5%;
+				padding-bottom: 15%;
+				padding-left: 10%;
+	 			background-repeat: no-repeat;
+	 			background-color: black;
+	 			background-position: center;
+	 			border-bottom: 7px solid black">
+        <div class="form">
+            <form action="/login"onsubmit="return formValidation()" method="post">
+                <h1>Login</h1>
+                <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+                <input type="password" id="password" required  name="password" placeholder="Password"><br><br>
+                <input type="submit" id="submit" name="submit" value="submit" onclick="return formValidation()">
+            </form><br>
+            <a href="http://localhost:3000/" style="color: rgb(12, 9, 9);">Registartion</a>
+        </div>
+	</div>
+</div>
+</div>
+<script>
+    let email=document.getElementById("email");
+    let password=document.getElementById("password");
+    function formValidation(){
+        if (!email.value.match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/) || email.value == "") {
+        email.nextElementSibling.style.display = "block";
+        email.style.border = "1px solid #f00";
+        return false
+        }else{
+        email.nextElementSibling.style.display = "none";
+        email.style.border = "1px solid transparent";
+        }
+        if (!(password.value.length > 6)) {
+            password.nextElementSibling.style.display = "block";
+            password.style.border = "1px solid #f00";
+            return false
+        } else{
+            password.nextElementSibling.style.display = "none";
+            password.style.border = "1px solid transparent";
+        }
+    }
+</script>
+</body>
+</html>
+

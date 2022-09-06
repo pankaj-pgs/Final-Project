@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DESIGNS GALAXY</title>
+	<link rel = "icon" href="http://localhost:4000/public/image/logo.png"type = "image/x-icon"> 
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Design Galaxy committed to delivering inspired designs that fulfill client expectations through collaboration and exceptional service. We Provide Best Interior Solutions Which Makes Your Dream Houses. Our goal is always to create designs Customized to our clients' especial personal styles and practical needs">
+    <meta name="keywords" content="Interior designs, Designs Galaxy, Interior designing">
+	<!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!------------AOS------------->
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/public/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!------------AOS--------------->
+
+    <script>
+    	function stickyMenu() {
+    		var sticky=document.getElementById("sticky");
+    		if(window.pageYOffset>20) {
+    			sticky.classList.add("sticky");
+    			sticky.classList.remove("menu-ul");
+
+    		}
+    		else
+    		{
+    			sticky.classList.remove("sticky")
+    		}
+    	}
+    	window.onscroll=function() {
+    		stickyMenu();
+    	}
+    </script>
+
+</head>
+<body id="index">
+	<div style="background-image: url('http://localhost:4000/public/image/background.jpg');
+				background-size: cover;
+				padding:10%;
+				padding-top: 0px;
+				padding-bottom: 30%;
+				padding-left: 0%;
+	 			background-repeat: no-repeat;
+	 			background-color: black;
+	 			background-position: center;
+	 			border-bottom: 7px solid black">
+	
+		<div class="menu" id="sticky">
+			<ul class="menu-ul">
+				<img class="logo" src="http://localhost:4000/public/image/logo.png">
+				<li><a href="http://localhost:4000/index.html">Home</a></li>
+				<li><a href="http://localhost:4000/gallery.html">Gallery</a></li>
+				<li><a href="http://localhost:4000/services.html">Services</a></li>
+				<li><a href="http://localhost:4000/aboutus.html">About Us</a></li>
+				<li><a href="http://localhost:4000/order.html">Interior Parts</a></li>
+				<li><a href="http://localhost:4000/feedback.html">Feedback</a></li>
+			</ul>
+		</div>
+		<div class="hed" style="text-align: center; font-size:30px;position:relative;top:140px;color: black; ">DESIGNS GALAXY
+				<h6 style="font-size: 20px; text-align: center;">"Design Galaxy committed to delivering inspired designs that fulfill client expectations<br> through collaboration and exceptional service. We Provide Best Interior Solutions<br> Which Makes Your Dream Houses. Our goal is always to<br> create designs Customized to our clients' especial personal styles and practical needs"</h6>
+		</div>
+	</div>
+	<!-------------design------------>
+		<div class="page-blocks">
+			<div class="title" data-aos="fade-right">
+				<h1>OUR DESIGNS</h1>
+			</div>
+			<div class="design">
+				<img src="http://localhost:4000/public/image/1.jfif" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" data-aos="fade-up" width="410" height="300"/>
+				<img src="http://localhost:4000/public/image/2.jfif" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" data-aos="fade-up" width="410" height="300"/>
+				<img src="http://localhost:4000/public/image/3.jfif" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" data-aos="fade-up" width="410" height="300"/>
+				<img src="http://localhost:4000/public/image/4.jfif" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" data-aos="fade-up" width="410" height="300"/>
+				<img src="http://localhost:4000/public/image/5.jfif" onclick="openModal();currentSlide(5)" class="hover-shadow cursor" data-aos="fade-up" width="410" height="300"/>
+				<img src="http://localhost:4000/public/image/6.jfif" onclick="openModal();currentSlide(6)" class="hover-shadow cursor" data-aos="fade-up" width="410" height="300"/>
+			</div>
+			<button class="more-designs-btn" data-aos="fade-up">
+				<ul class="menu-ul">
+				<li><a href="gallery.html" style="color: blue;">More Designs</a></li>
+				</ul>
+			</button>
+		</div>
+
+		<div id="myModal" class="modal">
+		  <span class="close cursor" onclick="closeModal()">&times;</span>
+		  <div class="modal-content">
+
+		    <div class="mySlides">
+		      <div class="numbertext">1 / 6</div>
+		      <img src="http://localhost:4000/public/image/1.jfif" style="width:100%" >
+		    </div>
+
+		    <div class="mySlides">
+		      <div class="numbertext">2 / 6</div>
+		      <img src="http://localhost:4000/public/image/2.jfif" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		      <div class="numbertext">3 / 6</div>
+		      <img src="http://localhost:4000/public/image/3.jfif" style="width:100%">
+		    </div>
+		    
+		    <div class="mySlides">
+		      <div class="numbertext">4 / 6</div>
+		      <img src="http://localhost:4000/public/image/4.jfif" style="width:100%">
+		    </div>
+
+		     <div class="mySlides">
+		      <div class="numbertext">5 / 6</div>
+		      <img src="http://localhost:4000/public/image/5.jfif" style="width:100%">
+		    </div>
+
+		     <div class="mySlides">
+		      <div class="numbertext">6 / 6</div>
+		      <img src="http://localhost:4000/public/image/6.jfif" style="width:100%">
+		    </div>
+		    
+		    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		    <div class="caption-container">
+      			<p id="caption"></p>
+    		</div>
+
+		    <div class="column">
+	      <img class="demo cursor" src="http://localhost:4000/public/image/1.jfif" style="width:100%" onclick="currentSlide(1)" >
+	    </div>
+	    <div class="column">
+	      <img class="demo cursor" src="http://localhost:4000/public/image/2.jfif" style="width:100%" onclick="currentSlide(2)" >
+	    </div>
+	    <div class="column">
+	      <img class="demo cursor" src="http://localhost:4000/public/image/3.jfif" style="width:100%" onclick="currentSlide(3)" >
+	    </div>
+	    <div class="column">
+	      <img class="demo cursor" src="http://localhost:4000/public/image/4.jfif" style="width:100%" onclick="currentSlide(4)" >
+	    </div>
+	    <div class="column">
+	      <img class="demo cursor" src="http://localhost:4000/public/image/5.jfif" style="width:100%" onclick="currentSlide(5)" >
+	    </div>
+	    <div class="column">
+	      <img class="demo cursor" src="http://localhost:4000/public/image/6.jfif" style="width:100%" onclick="currentSlide(6)" >
+	    </div>
+		    
+		  </div>
+		</div>
+		
+	<!-----------appointment----------->
+		<div class="page-blocks">
+			<div class="flex-block">
+				<div class="appointment-flex-item" data-aos="zoom-in">
+					<div class="container">
+						<form action="/index.html" name="custom_form" id="customForm" onsubmit="return FormValidation()" method="post">
+						<div class="form_box">
+						  <h1>Appointment</h1>
+								<div class="input-row">
+									<input type="text" name="name" placeholder="Name*">
+									<span class="error">Please Enter Your Name</span>
+								</div>
+								<div class="input-row">
+									<input type="text" name="email" placeholder="Email*">
+									<span class="error">Please Enter Your Email</span>
+								</div>
+								<div class="input-row">
+									<input type="text" name="phone" placeholder="Phone*">
+									<span class="error">Please Enter Your Phone</span>
+								</div>
+								<div class="input-row">
+									<select name="subject">
+										<option value="">Subject*</option>
+										<option value="House plans">House plans</option>
+										<option value="House elevation 3d">House elevation 3d</option>
+										<option value="Residential">Residential</option>
+										<option value="Commarcial">Cammarcial</option>
+										<option value="Hospitality">Hospitality</option>
+									</select>
+									<span class="error">Please Enter Your Subject</span>
+								</div>
+								<div class="input-row">
+									<input placeholder="Message*" name="message">
+									<span class="error">Please Enter Your Message</span>
+								</div>
+								<input type="submit" value="Submit" name="">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+	
+<!-------------footer------------>
+<div class="footer">
+	<div class="location">
+		<div> LOCATION<br/>
+			<div class="address">Pimpri Chinchwad<br/>Pune<br/>411033</div>
+		</div>
+	</div>
+	<hr class="margin">
+	<div class="social-media-icons">
+		<!-- Add font awesome icons -->
+			<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+			<a href="https://www.instagram.com/designs_galaxy/" class="fa fa-instagram"></a>
+			<a href="https://www.whatsapp.com" class="fa fa-whatsapp"></a>
+			<a href="https://www.twitter.com" class="fa fa-twitter"></a>
+	</div>
+</div>
+</div>
+
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<script>
+	function FormValidation(){
+	//alert("Alert")
+	var name=document.custom_form.name;
+	var email=document.custom_form.email;
+	var phone=document.custom_form.phone;
+	var subject=document.custom_form.subject;
+	var message=document.custom_form.message;
+	var conditions=document.custom_form.conditions;
+	
+	if (name.value == "") {
+	   name.nextElementSibling.style.display = "block";
+	   name.style.border = "1px solid #f00";
+	   return false
+	}else{
+	  name.nextElementSibling.style.display = "none";
+	  name.style.border = "1px solid transparent";
+	}
+	if (!email.value.match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/) || email.value == "") {
+	   email.nextElementSibling.style.display = "block";
+	   email.style.border = "1px solid #f00";
+	   return false
+	}else{
+	  email.nextElementSibling.style.display = "none";
+	  email.style.border = "1px solid transparent";
+	}
+	if (!phone.value.match( /^\(?([5-9]{1})\)?([0-9]{9})$/) || phone.value == "") {
+	   phone.nextElementSibling.style.display = "block";
+	   phone.style.border = "1px solid #f00";
+	   return false
+	}else{
+	  phone.nextElementSibling.style.display = "none";
+	  phone.style.border = "1px solid transparent";
+	}
+	if (subject.value == "") {
+	   subject.nextElementSibling.style.display = "block";
+	   subject.style.border = "1px solid #f00";
+	   return false
+	}else{
+	  subject.nextElementSibling.style.display = "none";
+	  subject.style.border = "1px solid transparent";
+	}
+	if (message.value == "") {
+	   message.nextElementSibling.style.display = "block";
+	   message.style.border = "1px solid #f00";
+	   return false
+	}else{
+	  message.nextElementSibling.style.display = "none";
+	  message.style.border = "1px solid transparent";
+	}
+	return alert('Your Appointment Send Successfully');
+	}
+	
+	</script>
+
+
+</body>
+</html>
+
+
+<script>
+	AOS.init({
+		duration:1400,
+	})
+</script>
+
+
+<style>
+
+</style>
+

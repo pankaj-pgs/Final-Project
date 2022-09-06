@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DESIGNS GALAXY</title>
+	<link rel="icon" href="http://localhost:4000/public/image/logo.png" type="image/icon type">
+		<link rel="stylesheet" href="http://localhost:4000/public/css/style.css">
+		<!-- Add icon library -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	    <!------------AOS------------->
+	    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	    <!------------AOS--------------->
+
+	    <script>
+	    	function stickyMenu() {
+	    		var sticky=document.getElementById("sticky");
+	    		if(window.pageYOffset>20) {
+	    			sticky.classList.add("sticky");
+	    			sticky.classList.remove("menu-ul");
+
+	    		}
+	    		else
+	    		{
+	    			sticky.classList.remove("sticky")
+	    		}
+	    	}
+	    	window.onscroll=function() {
+	    		stickyMenu();
+	    	}
+	    </script>
+
+</head>
+<body>
+	<div style="background-size: cover;
+	 			background-repeat: no-repeat;
+	 			background-color: white;
+	 			background-position: center;">
+		 <div class="menu1" id="sticky">
+			<ul class="menu-ul">
+				<img class="logo" src="http://localhost:4000/public/image/logo.png">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="http://localhost:4000/order.html">Interior Parts</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="http://localhost:4000/feedback.html">Feedback</a></li>
+			</ul>
+		</div>
+
+		<div class="content-max-width">
+			<div class="inside-container">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.6632540817463!2d79.50876445026621!3d26.46658158323986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399df3246c1f1cf7%3A0x3d6ff6c4dc9cc44!2sShubham+Agencies!5e0!3m2!1sen!2sin!4v1542973150381" frameborder="0" class="blog" style="width:80%;height: 80%;"></iframe>
+
+					<div class="box">
+						<div class="large-text">
+							Contact Us
+						</div>
+
+
+					<div class="awesome-grid">
+
+						<i class="fa fa-envelope" style="font-size: 170%"></i>
+					<div class="mail">
+						designsgalaxy1998@gmail.com
+					</div>
+				
+					<i class="fa fa-phone" style="font-size: 170%"></i>
+					<div class="phone">
+						+91 72197 28084,<br>+91 98502 40300
+					</div>
+
+					<i class="fa fa-map-marker" style="font-size: 170%"></i>
+					<div class="location">
+						75/5 Shree Samrtha Krupa, Walhekarwadi, Chinchwad, pune-33
+					</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+	<!-------------footer------------>
+	<div class="footer">
+		<div class="location">
+			<div> LOCATION<br/>
+				<div class="address">Pimpri Chinchwad<br/>Pune<br/>411033</div>
+			</div>
+		</div>
+		<hr class="margin">
+		<div class="social-media-icons">
+			<!-- Add font awesome icons -->
+				<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+				<a href="https://www.instagram.com/designs_galaxy/" class="fa fa-instagram"></a>
+				<a href="https://www.whatsapp.com" class="fa fa-whatsapp"></a>
+				<a href="https://www.twitter.com" class="fa fa-twitter"></a>
+		</div>
+	</div>
+</body>
+</html>
+
+
+<script>
+	AOS.init({
+		duration:1400,
+	})
+</script>

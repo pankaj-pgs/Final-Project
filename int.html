@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculate Price</title>
+  <link rel = "icon" href="http://localhost:3000/public/images/images/logo.png"type = "image/x-icon"> 
+<link rel="stylesheet" href="http://localhost:3000/public/css/style1.css">
+</head>
+
+<body>
+  <!-- contact1 -->
+  <section class="w3l-simple-contact-form1">
+    <div class="contact-form section-gap">
+      <div class="wrapper">
+        <div class="text-center">
+        <h1 style="font-size: 40px; " >Calculate Interior Price</h1>
+      </div>
+        <div class="contact-form" style="max-width: 450px; margin: 0 auto;">
+          <div class="form-mid">
+            <form action="javascript:calculate()" method="post">
+              <div class="field">
+                <input type="number" class="form-control" name="Name" id="Name" placeholder="Total Area" required="">
+              </div>
+             
+              <div class="field">
+                <input type="number" class="form-control" name="Subject" id="Subject" placeholder="Number of Rooms"
+                  required="">
+              </div>
+              <button type="submit" class="btn btn-contact">Calculate</button>
+              <!-- <input type="button" class="btn btn-contact" onclick="sendmail();"  value="Send Message"> -->
+
+            </form><br>
+            <div class=""><h3 id="te"></h3></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /contact1 -->
+  
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+ 
+<script>  
+
+     function calculate(){
+    
+			var name = $('#Name').val();
+			var email = $('#Sender').val();
+			var subject = $('#Subject').val();
+            var message = $('#Message').val();
+
+			console.log(name, email, subject);
+            let cal=name*2000;
+            let r=0.02*cal;
+            cal=0.01*cal+r+cal;
+            document.getElementById('te').innerHTML='Total Amount: '+cal+' Rs';
+            console.log(cal);
+		}
+
+
+    </script>
+ </script>
+
+</body>
+</html>
